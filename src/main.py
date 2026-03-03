@@ -67,7 +67,13 @@ class MainWindow(QMainWindow):
         self.show_home()
 
     def load_stylesheet(self):
-        style_path = os.path.join(os.path.dirname(__file__), 'assets', 'style.qss')
+        # 兼容 PyInstaller 打包后的路径
+        if getattr(sys, 'frozen', False):
+            base_dir = sys._MEIPASS
+        else:
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+
+        style_path = os.path.join(base_dir, 'assets', 'style.qss')
         if os.path.exists(style_path):
             with open(style_path, "r", encoding="utf-8") as f:
                 qss_content = f.read()
