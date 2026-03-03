@@ -1,0 +1,20 @@
+/* Global styles */
+QWidget {
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: #333333;
+    background-color: #f7f9fc;
+}
+QLabel#headerTitle { font-size: 32px; font-weight: bold; color: #1a202c; margin-top: 20px; }
+QLabel#headerSubtitle { font-size: 16px; color: #4a5568; margin-bottom: 20px; }
+QFrame.FeatureCard { background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; }
+QFrame.FeatureCard:hover { border: 1px solid #cbd5e0; background-color: #fafafa; }
+QLabel.CardTitle { font-size: 18px; font-weight: bold; color: #2d3748; }
+QLabel.CardDesc { font-size: 13px; color: #718096; }
+QPushButton { background-color: #e2e8f0; color: #2d3748; border: none; border-radius: 6px; padding: 10px 20px; font-size: 14px; font-weight: bold; }
+QPushButton:hover { background-color: #cbd5e0; }
+QPushButton.PrimaryButton { background-color: #e53e3e; color: white; }
+QPushButton.PrimaryButton:hover { background-color: #c53030; }
+QListWidget { background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px; font-size: 14px; }
+QListWidget::item { padding: 10px; border-bottom: 1px solid #edf2f7; }
+QListWidget::item:selected { background-color: #ebf8ff; color: #2b6cb0; }
+QLineEdit { background-color: #ffffff; border: 1px solid #cbd5e0; border-radius: 6px; padding: 8px; font-size: 14px; }
