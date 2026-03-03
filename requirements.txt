@@ -1,2 +1,11 @@
 PySide6
 pypdf
+PyMuPDF
+pdf2docx
+pdfplumber
+pandas
+openpyxl
+python-pptx
+docx2pdf
+Pillow
+comtypes
